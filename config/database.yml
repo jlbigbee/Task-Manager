@@ -19,14 +19,14 @@ default: &default
 
 development:
   <<: *default
-  database: Task_Manager_development
+  database: task_manager_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: Task_Manager_test
+  database: task_manager_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -50,6 +50,6 @@ test:
 #
 production:
   <<: *default
-  database: Task_Manager_production
-  username: Task_Manager
+  database: task_manager_production
+  username: task_manager
   password: <%= ENV["TASK_MANAGER_DATABASE_PASSWORD"] %>
